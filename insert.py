@@ -22,6 +22,7 @@ def insert_vendor(vendor_name):
         print(error)
     finally:
         return vendor_id
+
 def insert_many_vendors(vendor_list):
     """ Insert multiple vendors into the vendors table  """
     sql = "INSERT INTO vendors(vendor_name) VALUES(%s) RETURNING *"
